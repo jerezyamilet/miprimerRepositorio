@@ -1,0 +1,125 @@
+
+<style>
+
+body
+
+{
+font-family:'poppins', sans-serif;
+margin: 0px;
+padding: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #333;
+
+}
+
+ul{
+margin: 0px;
+padding: 0px;
+display: flex;
+
+
+}
+
+ul li{
+
+position: relative;
+list-style: none;
+width: 20px;
+height: 20px;
+background-color: #777;
+margin: 0 20px;
+border-radius: 50%;
+transition: 0.5s;
+cursor: pointer;
+
+
+
+}
+
+ul li:hover{
+    background-color: rgb(59, 136, 69);
+    box-shadow: 0 0 0 4px #333,
+                0 0 0 6px rgb(59, 136, 69);
+
+
+
+
+}
+
+ul li .content{
+ 
+    position: absolute;
+    bottom: 55px;
+    width: 400px;
+    background-color: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0px;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+
+}
+
+ul li .content:before{
+
+content: '';
+position: absolute;
+width: 30px;
+height: 30px;
+background-color: #FFF;
+bottom: -15px;
+left: 194px;
+transform: rotate(45deg);
+
+
+
+
+
+
+}
+
+
+
+ul li:hover .content{
+    visibility: visible;
+    opacity: 1px;
+    transform: translateX(-50%) translateY(0px);
+
+
+
+}
+
+
+
+
+</style>
+<body>
+<ul>
+<li>
+<div class="content">
+<h1>HOLA SOY TOOLTIP</h1>
+<p>Aliquam porta neque eu consectetur facilisis.
+     Nulla pellentesque mauris in felis volutpat, in rutrum arcu tincidunt. 
+     Etiam vestibulum ultrices felis fermentum ornare. In id suscipit lectus.</p>
+
+
+
+</div>
+
+
+
+
+</li>
+
+
+</ul>
+
+
+
+
+</body>
